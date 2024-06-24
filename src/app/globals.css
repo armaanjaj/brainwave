@@ -10,8 +10,6 @@
     --font-sora: "Sora", sans-serif;
     --font-code: "Source Code Pro", monospace;
     --font-grotesk: "Space Grotesk", sans-serif;
-    --color-n-8: #08001a; /* Assuming this is the color for bg-n-8 */
-    --color-n-1: #ffffff; /* Assuming this is the color for text-n-1 */
 }
 
 * {
@@ -20,41 +18,32 @@
 
 @layer base {
     body {
-        font-family: var(--font-sora);
-        background-color: var(--color-n-8);
-        color: var(--color-n-1);
-        @apply text-base;
+        @apply font-sans bg-n-8 text-n-1 text-base;
     }
 }
 
+/* Rotations */
 .rotate-45 {
     @apply rotate-[45deg];
 }
-
 .rotate-90 {
     @apply rotate-[90deg];
 }
-
 .rotate-135 {
     @apply rotate-[135deg];
 }
-
 .rotate-180 {
     @apply rotate-[180deg];
 }
-
 .rotate-225 {
     @apply rotate-[225deg];
 }
-
 .rotate-270 {
     @apply rotate-[270deg];
 }
-
 .rotate-315 {
     @apply rotate-[315deg];
 }
-
 .rotate-360 {
     @apply rotate-[360deg];
 }
@@ -62,31 +51,24 @@
 .-rotate-45 {
     @apply rotate-[-45deg];
 }
-
 .-rotate-90 {
     @apply rotate-[-90deg];
 }
-
 .-rotate-135 {
     @apply rotate-[-135deg];
 }
-
 .-rotate-180 {
     @apply rotate-[-180deg];
 }
-
 .-rotate-225 {
     @apply rotate-[-225deg];
 }
-
 .-rotate-270 {
     @apply rotate-[-270deg];
 }
-
 .-rotate-315 {
     @apply rotate-[-315deg];
 }
-
 .-rotate-360 {
     @apply rotate-[-360deg];
 }
